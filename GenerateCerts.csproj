@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Generate_Certs</RootNamespace>
+    <AssemblyName>GenerateCerts</AssemblyName>
+    <Version>0.0.30</Version>
+    <Description>Generates self-signed SSL/TLS certificates.</Description>
+    <PackageProjectUrl>https://github.com/asheroto/GenerateCerts</PackageProjectUrl>
+    <PackageTags>generate, certificates, certs, self signed, ssl certificate, tls certificate</PackageTags>
+    <NeutralLanguage></NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <ErrorReport>none</ErrorReport>
+  </PropertyGroup>
+
+<ItemGroup>
+  <TrimmerRootAssembly Include="System.ComponentModel.EventBasedAsync" />
+</ItemGroup>
+
+</Project>
